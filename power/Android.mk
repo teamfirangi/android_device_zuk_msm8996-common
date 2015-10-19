@@ -69,6 +69,15 @@ endif
 
 ifeq ($(call is-board-platform-in-list,qcs605), true)
 LOCAL_SRC_FILES += power-710.c
+
+ifneq ($(TARGET_TAP_TO_WAKE_NODE),)
+LOCAL_CFLAGS += -DTAP_TO_WAKE_NODE=\"$(TARGET_TAP_TO_WAKE_NODE)\"
+endif
+
+ifeq ($(CM_POWERHAL_EXTENSION),)
+LOCAL_MODULE := power.$(CM_POWERHAL_EXTENSION)
+else
+LOCAL_MODULE := power.$(TARGET_BOARD_PLATFORM)
 endif
 
 ifeq ($(call is-board-platform-in-list,msmnile), true)
