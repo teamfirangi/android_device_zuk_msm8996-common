@@ -458,13 +458,13 @@
     <!-- Default value for proximity check on screen wake
          NOTE ! - Enable for devices that have a fast response proximity sensor (ideally < 300ms) -->
    
-    <bool name="config_proximityCheckOnWake">true</bool>
+    <!--    <bool name="config_proximityCheckOnWake">true</bool>
     <integer name="config_proximityCheckTimeout">3000</integer>
     <bool name="config_proximityCheckOnWakeEnabledByDefault">true</bool>
 
     <integer name="config_flashlightProximityTimeout">3000</integer>
 
-    <!-- Whether home button can wake device
+     Whether home button can wake device
     <bool name="config_homeCanWake">true</bool> -->
 
     <!-- Stop listening to the fingerprint reader when NON-WAKEUP proximity sensor is covered & screen is off.
@@ -481,8 +481,8 @@
          in hardware. -->
     <bool name="config_setColorTransformAccelerated">true</bool>
 
-    <!-- Enable full screen DT2S in lockscreen -->
-    <bool name="fullScreenDT2S">true</bool>
+    <!-- Enable full screen DT2S in lockscreen 
+    <bool name="fullScreenDT2S">true</bool> -->
 
     <!-- The duration (in milliseconds) that the radio will scan for a signal
          when there's no network connection. If the scan doesn't timeout, use zero -->
