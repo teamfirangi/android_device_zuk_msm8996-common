@@ -120,6 +120,7 @@ BOARD_USES_QCNE := true
 # Crypto
 TARGET_HW_DISK_ENCRYPTION := true
 TARGET_KEYMASTER_WAIT_FOR_QSEE := true
+TARGET_CRYPTFS_HW_PATH := $(VENDOR_PATH)/cryptfs_hw
 
 # Enable dexpreopt to speed boot time
 ifeq ($(HOST_OS),linux)
