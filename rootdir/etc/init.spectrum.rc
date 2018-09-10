@@ -239,3 +239,4 @@ on property:persist.spectrum.profile=3
 	write /sys/kernel/msm_thermal/enabled 1
 	start start thermal-engine
 	trigger enable-low-power
+	
