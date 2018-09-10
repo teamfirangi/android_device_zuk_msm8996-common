@@ -154,7 +154,7 @@ on property:persist.spectrum.profile=2
     write /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor "interactive"
     write /sys/devices/system/cpu/cpu2/cpufreq/interactive/use_sched_load 0
     write /sys/devices/system/cpu/cpu2/cpufreq/interactive/use_migration_notif 0
-    write /sys/devices/system/cpu/cpu2/cpufreq/interactive/above_hispeed_delay "29000 940800:39000 1401600:49000 1555200:89000 1824000:89000"
+    write /sys/devices/system/cpu/cpu2/cpufreq/interactive/above_hispeed_delay "29000 940800:39000 1401600:79000 1555200:89000 1824000:89000"
     write /sys/devices/system/cpu/cpu2/cpufreq/interactive/go_hispeed_load 100
     write /sys/devices/system/cpu/cpu2/cpufreq/interactive/timer_rate 40000
     write /sys/devices/system/cpu/cpu2/cpufreq/interactive/hispeed_freq 940800
@@ -239,4 +239,3 @@ on property:persist.spectrum.profile=3
 	write /sys/kernel/msm_thermal/enabled 1
 	start start thermal-engine
 	trigger enable-low-power
-	
