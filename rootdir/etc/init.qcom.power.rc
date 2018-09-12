@@ -128,6 +128,9 @@ on charger
 on enable-low-power
     # Disable thermal hotplug to switch governor
     write /sys/module/msm_thermal/core_control/enabled 0
+	
+	# Enable DTTW Gesture
+	write /sys/devices/virtual/touch/tp_dev/gesture_on 1
 
     # Enable Adaptive LMK
     write /sys/module/lowmemorykiller/parameters/enable_adaptive_lmk 1
